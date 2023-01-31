@@ -4,35 +4,44 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows;
-using Microsoft.VisualBasic;
 using System.Media;
-using System.Runtime.InteropServices;
 
-namespace _3DaysMario
+namespace MarioLiver
 {
     public partial class Motherfucker : Form
     {
         [DllImport("winmm.dll", EntryPoint = "mciSendString")]
-        public static extern int mciSendStringA(string lpstrCommand, string? lpstrReturnString,
+        public static extern int mciSendStringA(string lpstrCommand, string lpstrReturnString,
                             int uReturnLength, int hwndCallback);
+
+        [DllImport("user32.dll")]
+        static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, int dwExtraInfo);
 
         public Motherfucker()
         {
             InitializeComponent();
-            
+
         }
 
         private void Motherfucker_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Motherfucker_Shown(object sender, EventArgs e)
         {
+            new Thread(() =>
+            {
+                for (int i = 0; i < 100; i++)
+                {
+                    keybd_event((byte)Keys.VolumeUp, 0, 0, 0);
+                }
+            }).Start();
             new Thread(() =>
             {
                 SoundPlayer sp = new SoundPlayer(Properties.Resources.jeb1);
@@ -42,7 +51,7 @@ namespace _3DaysMario
                 SoundPlayer sp2 = new SoundPlayer(Properties.Resources.liver1);
                 sp2.Play();
                 Thread.Sleep(3400);
-                mciSendStringA("set cdaudio door open", null, 0, 0);
+                mciSendStringA("set cdaudio door open", "", 0, 0);
             }).Start();
         }
     }

@@ -1,0 +1,12 @@
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.csproj.AssemblyReference.cache
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.csproj.SuggestedBindingRedirects.cache
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.Properties.Resources.resources
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.csproj.GenerateResource.cache
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.csproj.CoreCompileInputs.cache
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.Error.resources
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\MarioLiver.Motherfucker.resources
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\bin\Debug\Super Mario Odyssey 2.exe.config
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\bin\Debug\Super Mario Odyssey 2.exe
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\bin\Debug\Super Mario Odyssey 2.pdb
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\Super Mario Odyssey 2.exe
+C:\Users\Patryk Kursa\Desktop\DEV\repos\MarioLiver\MarioLiver\obj\Debug\Super Mario Odyssey 2.pdb

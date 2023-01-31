@@ -1,26 +1,40 @@
-using System.Media;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
-namespace _3DaysMario
+namespace MarioLiver
 {
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// Główny punkt wejścia dla aplikacji.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
             new Thread(() =>
             {
                 Application.Run(new Error());
-                Thread.Sleep(1000 * 60 * 10);
-                Motherfucker mf = new Motherfucker();
-                Screen scr = Screen.PrimaryScreen;
-                mf.Size = new Size(scr.Bounds.Height, scr.Bounds.Height);
-                Application.Run(mf);
+            }).Start();
+            new Thread(() =>
+            {
+                String hour10minuteLater = DateTime.Now.AddMinutes(10).ToString("HH:mm:ss");
+                while (true)
+                {
+                    String hour = DateTime.Now.ToString("HH:mm:ss");
+                    if (hour == hour10minuteLater)
+                    {
+                        Motherfucker mf = new Motherfucker();
+                        Screen scr = Screen.PrimaryScreen;
+                        mf.Size = new Size(scr.Bounds.Height, scr.Bounds.Height);
+                        Application.Run(mf);
+                    }
+                    Thread.Sleep(1000);
+                }
             }).Start();
         }
     }

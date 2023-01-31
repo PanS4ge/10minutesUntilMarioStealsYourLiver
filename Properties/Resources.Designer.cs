@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _3DaysMario.Properties {
+namespace MarioLiver.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace _3DaysMario.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_3DaysMario.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MarioLiver.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -82,6 +82,15 @@ namespace _3DaysMario.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream jeb {
+            get {
+                return ResourceManager.GetStream("jeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream jeb1 {
             get {
                 return ResourceManager.GetStream("jeb1", resourceCulture);
@@ -94,6 +103,15 @@ namespace _3DaysMario.Properties {
         internal static System.IO.UnmanagedMemoryStream knock {
             get {
                 return ResourceManager.GetStream("knock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream liver {
+            get {
+                return ResourceManager.GetStream("liver", resourceCulture);
             }
         }
         
@@ -139,9 +157,9 @@ namespace _3DaysMario.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream thatisnotanoption1 {
+        internal static System.IO.UnmanagedMemoryStream thatisnotanoption {
             get {
-                return ResourceManager.GetStream("thatisnotanoption1", resourceCulture);
+                return ResourceManager.GetStream("thatisnotanoption", resourceCulture);
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace _3DaysMario
+﻿namespace MarioLiver
 {
     partial class Motherfucker
     {
@@ -32,14 +32,15 @@
             // 
             // Motherfucker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_3DaysMario.Properties.Resources.mario_enter;
+            this.BackgroundImage = global::MarioLiver.Properties.Resources.mario_enter;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(500, 500);
+            this.ClientSize = new System.Drawing.Size(429, 433);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Motherfucker";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Motherfucker";
             this.TopMost = true;

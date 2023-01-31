@@ -4,16 +4,17 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
 
-namespace _3DaysMario
+namespace MarioLiver
 {
     public partial class Error : Form
     {
         public bool that_is_not_an_option = false;
+        public bool not_show_error = false;
         public Error()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace _3DaysMario
 
         private void Error_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Error_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,10 +32,16 @@ namespace _3DaysMario
             if (!that_is_not_an_option)
             {
                 Face.BackgroundImage = Properties.Resources.angry;
-                SoundPlayer sp = new SoundPlayer(Properties.Resources.thatisnotanoption1);
+                SoundPlayer sp = new SoundPlayer(Properties.Resources.thatisnotanoption);
                 sp.Play();
                 e.Cancel = true;
                 that_is_not_an_option = true;
+            } else
+            {
+                if (!not_show_error)
+                {
+                    MessageBox.Show("Ok, I'll go, but Mario's already called", "Mario Error");
+                }
             }
         }
 
@@ -43,7 +50,7 @@ namespace _3DaysMario
             if (!that_is_not_an_option)
             {
                 Face.BackgroundImage = Properties.Resources.angry;
-                SoundPlayer sp = new SoundPlayer(Properties.Resources.thatisnotanoption1);
+                SoundPlayer sp = new SoundPlayer(Properties.Resources.thatisnotanoption);
                 sp.Play();
                 No.Enabled = false;
                 No.Text = "X";
@@ -53,6 +60,7 @@ namespace _3DaysMario
 
         private void Wahoo_Click(object sender, EventArgs e)
         {
+            not_show_error = true;
             Face.BackgroundImage = Properties.Resources.normal;
             that_is_not_an_option = true;
             this.Close();
